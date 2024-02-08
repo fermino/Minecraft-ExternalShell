@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "me.fermino"
-version = "1.0-SNAPSHOT"
+version = "1.0-bukkit"
 
 repositories {
     mavenCentral()
