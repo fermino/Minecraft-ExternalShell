@@ -1,7 +1,5 @@
 name: Build
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,3 +13,7 @@ jobs:
         uses: gradle/gradle-build-action@v3
       - name: Build
         run: ./gradlew build
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: build/libs
