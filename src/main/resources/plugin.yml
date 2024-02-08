@@ -1,0 +1,15 @@
+# https://docs.papermc.io/paper/dev/plugin-yml
+
+name: ExternalShell
+version: 1.0.0
+main: me.fermino.externalshell.ExternalShell
+description: A simple /shell command to execute commands in your server from minecraft. Beware of the HUGE security risk this poses if misused.
+author: Fermín Olaiz
+website: https://fermino.me
+api-version: '1.20'
+commands:
+  shell:
+    aliases: [ sh ]
+    description: Executes the given command in the server. Beware of the HUGE security risk this poses if misused.
+    usage: /shell <COMMAND>
+    permission: externalshell.shell
